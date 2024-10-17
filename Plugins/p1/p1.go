@@ -14,7 +14,7 @@ func NewA() {
 
 type Func func()
 
-//go:generate go build --gcflags=all=-N  -buildmode=plugin  -o  p1.so  p1.go
+//go:generate go build --gcflags=all=-N --gcflags=all=-l  -buildmode=plugin  -o  p1.so  p1.go
 func Hook(m map[string]uintptr) {
 	_ = bussiniess.A
 	bussiniess.GGG = 333

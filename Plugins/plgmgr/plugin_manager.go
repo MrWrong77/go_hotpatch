@@ -8,7 +8,7 @@ import (
 
 // pluginMgr entry point
 //
-//go:generate go build --gcflags=all=-N  -buildmode=plugin  -o  plgmgr.so
+//go:generate go build --gcflags=all=-N --gcflags=all=-l  -buildmode=plugin  -o  plgmgr.so
 func Check(path string) {
 	GPlgMgr.CheckPath(path)
 }

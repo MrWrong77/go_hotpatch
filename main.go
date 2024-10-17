@@ -9,7 +9,7 @@ import (
 
 const PluginCfgFile = "./Plugins/plugin_version.json"
 
-//go:generate go build --gcflags=all=-N -o  main  .
+//go:generate go build --gcflags=all=-N --gcflags=all=-l -o  main  .
 func main() {
 	t := time.NewTicker(time.Second)
 	hookF := time.After(2 * time.Second)
