@@ -1,0 +1,12 @@
+[
+    {
+        "plugin_name": "p1",
+        "path": "p1",
+        "version": "1.0.3"
+    },
+    {
+        "plugin_name": "p1",
+        "path": "p2",
+        "version": "1.0.4"
+    }
+]
